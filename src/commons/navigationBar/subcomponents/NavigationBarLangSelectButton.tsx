@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import {
   getLanguageConfig,
+  goLanguages,
   pyLanguages,
   SALanguage,
   schemeLanguages,
@@ -21,7 +22,8 @@ const defaultSublanguages: {
 } = {
   [SupportedLanguage.JAVASCRIPT]: sourceLanguages[0],
   [SupportedLanguage.PYTHON]: pyLanguages[0],
-  [SupportedLanguage.SCHEME]: schemeLanguages[0]
+  [SupportedLanguage.SCHEME]: schemeLanguages[0],
+  [SupportedLanguage.GO]: goLanguages[0]
 };
 
 const NavigationBarLangSelectButton = () => {

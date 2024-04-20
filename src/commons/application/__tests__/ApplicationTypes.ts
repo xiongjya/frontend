@@ -3,6 +3,7 @@ import { Chapter, Variant } from 'js-slang/dist/types';
 import {
   ALL_LANGUAGES,
   getLanguageConfig,
+  goLanguages,
   pyLanguages,
   schemeLanguages,
   sourceLanguages
@@ -113,5 +114,11 @@ describe('available Python language configurations', () => {
 describe('available Scheme language configurations', () => {
   test('matches snapshot', () => {
     expect(schemeLanguages).toMatchSnapshot();
+  });
+});
+
+describe('available Go language configurations', () => {
+  test('matches snapshot', () => {
+    expect(goLanguages).toMatchSnapshot();
   });
 });
